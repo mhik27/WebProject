@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Tutorials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>JavaScript Tutorials</h1>
+    <div class="menu-icon" onclick="loadTutorials()">☰</div>
+  </header>
+
+  <div class="menu-panel" id="menuPanel">
+    <span class="close-icon" onclick="loadTutorials()">✖</span>
+    <a href="#" onclick="scrollToSection()">Home</a>
+    <a href="#" onclick="alert('We help you learn JavaScript through clear, beginner-friendly video tutorials')">About</a>
+    <a href="#" onclick="alert('We offer free JavaScript video tutorials and quizzes to help you learn and test your skills.')">Services</a>
+    <a href="#" onclick="alert('Have questions? Reach out to us at support@jstutorials.com — we’re happy to help!')">Contact</a>
+  </div>
+
+  <button id="startBtn">Load Tutorials</button>
+  <div id="content"></div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>

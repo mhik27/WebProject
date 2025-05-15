@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="login-container" id="loginForm">
+    <span class="close-btn" onclick="closeLoginForm()">&times;</span>
+    <h2>Login</h2>
+
+    <div class="input-group">
+      <i class="fas fa-user"></i>
+      <input type="text" id="username" placeholder="Username">
+    </div>
+    <span id="errorusername" class="error"></span>
+
+    <div class="input-group">
+      <i class="fas fa-lock"></i>
+      <input type="password" id="password" placeholder="Password">
+      <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+    </div>
+    <span id="errorpassword" class="error"></span>
+
+    <button type="button" onclick="handleSubmit()">Login</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
